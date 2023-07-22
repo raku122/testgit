@@ -1,0 +1,81 @@
+2023/07/22 16:23:47.504	WS1	b27419ad-0b51-41d3-a242-fc2e6d24b054	[0000000-0000000]   (9)  	Error	AirWatch.Messaging.Msmq.MSQueueReader`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].MessageReceiveCompletedBasicAsync	Receive Completed error for queue name: awsmartgroupevent, address: .\Private$\*** EXCEPTION ***
+System.Messaging.MessageQueueException: Queue handle can no longer be used to receive messages because the queue was deleted. The handle should be closed.   at System.Messaging.MessageQueue.AsynchronousRequest.End()
+   at AirWatch.Messaging.Msmq.MSQueueReader`1.<MessageReceiveCompletedBasicAsync>d__45.MoveNext()AW_Logging_Exception_Logged:True;AW_Logging_Exception_Data_Count:1;AW_Logging_Exception_Log_Message:Receive Completed error for queue name: {0}, address: {1}; Method: AirWatch.Messaging.Msmq.MSQueueReader`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].MessageReceiveCompletedBasicAsync;  
+2023/07/22 16:24:17.963	WS1	0545a845-ce64-4ad9-bbfc-aeee67a0ba02	[0000000-0000000]   (7)  	Error	AirWatch.Messaging.Msmq.MSQueueReader`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].MessageReceiveCompletedBasicAsync	Receive Completed error for queue name: awsmartgroupevent, address: .\Private$\*** EXCEPTION ***
+System.Messaging.MessageQueueException: Queue handle can no longer be used to receive messages because the queue was deleted. The handle should be closed.   at System.Messaging.MessageQueue.AsynchronousRequest.End()
+   at AirWatch.Messaging.Msmq.MSQueueReader`1.<MessageReceiveCompletedBasicAsync>d__45.MoveNext()AW_Logging_Exception_Logged:True;AW_Logging_Exception_Data_Count:1;AW_Logging_Exception_Log_Message:Receive Completed error for queue name: {0}, address: {1}; Method: AirWatch.Messaging.Msmq.MSQueueReader`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].MessageReceiveCompletedBasicAsync;  
+2023/07/22 16:24:50.024	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Info 	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeDataHandler.LoadAllSystemCodes	Loaded 2500 system code entities from the database.  
+2023/07/22 16:24:50.134	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #1, Category: CacheSettings, OG: 7, Forced: True, From: Database  
+2023/07/22 16:25:03.872	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #2, Category: Diagnostics_Logging, OG: 7, Forced: False, From: Database  
+2023/07/22 16:25:03.977	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.AirwatchInstallationValidator.IsDatabaseInReadyState	Check if Database is in ready to use state  
+2023/07/22 16:25:03.992	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.AirwatchInstallationValidator.IsDatabaseInReadyState	Is Database Ready : True  
+2023/07/22 16:25:04.008	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._GetOrSetAsymmetricKeys	Checking RsaKeys in cache for cacheKey: RsaKeys:e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35:7  
+2023/07/22 16:25:04.024	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._GetOrSetAsymmetricKeys	RsaKeys not present in cache for cacheKey: RsaKeys:e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35:7. Fetching from DB for location group: 7 and issuer identifier: e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35  
+2023/07/22 16:25:04.024	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.ProviderImpl.JwtEncoding.JwtEncodingDataHandler.GetAsymmetricKeys	Command: DB: Calling 'StoredProcedure': 'dbo.AuthenticationKey_Get' '@LocationGroupID' : '7' '@IssuerGuid' : 'e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35'  
+2023/07/22 16:25:04.039	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._GetOrSetAsymmetricKeys	Loading both PublicKey & PrivateKey.  
+2023/07/22 16:25:04.039	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	AirWatch.Security.Cryptography.KeyManagement.MasterKeyResolver.GetMasterKey	keyVersion is not defined or equals the default key version.  
+2023/07/22 16:25:04.055	WS1	a8d6f0f7-c722-4af8-a61f-e3124804158a	[0000000-0000000]   (1)  	Debug	AirWatch.Security.Cryptography.AESEncryption.DecryptorLegacy.Key	Key: Key:awev2:kv0 not found in cache  
+2023/07/22 16:26:24.108	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Info 	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeDataHandler.LoadAllSystemCodes	Loaded 2500 system code entities from the database.  
+2023/07/22 16:26:24.218	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #1, Category: CacheSettings, OG: 7, Forced: True, From: Database  
+2023/07/22 16:26:26.546	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #2, Category: Diagnostics_Logging, OG: 7, Forced: False, From: Database  
+2023/07/22 16:26:26.624	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.AirwatchInstallationValidator.IsDatabaseInReadyState	Check if Database is in ready to use state  
+2023/07/22 16:26:26.640	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.AirwatchInstallationValidator.IsDatabaseInReadyState	Is Database Ready : True  
+2023/07/22 16:26:26.655	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._GetOrSetAsymmetricKeys	Checking RsaKeys in cache for cacheKey: RsaKeys:e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35:7  
+2023/07/22 16:26:26.655	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._GetOrSetAsymmetricKeys	RsaKeys not present in cache for cacheKey: RsaKeys:e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35:7. Fetching from DB for location group: 7 and issuer identifier: e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35  
+2023/07/22 16:26:26.671	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.ProviderImpl.JwtEncoding.JwtEncodingDataHandler.GetAsymmetricKeys	Command: DB: Calling 'StoredProcedure': 'dbo.AuthenticationKey_Get' '@LocationGroupID' : '7' '@IssuerGuid' : 'e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35'  
+2023/07/22 16:26:26.671	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._GetOrSetAsymmetricKeys	Loading both PublicKey & PrivateKey.  
+2023/07/22 16:26:26.686	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	AirWatch.Security.Cryptography.KeyManagement.MasterKeyResolver.GetMasterKey	keyVersion is not defined or equals the default key version.  
+2023/07/22 16:26:26.686	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	AirWatch.Security.Cryptography.AESEncryption.DecryptorLegacy.Key	Key: Key:awev2:kv0 not found in cache  
+2023/07/22 16:26:29.202	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.JwtEncoding.JwtEncodingBusiness._AddRsaKeysInCache	Adding rsaKeys in cache for cacheKey: RsaKeys:e61a227a-daf4-4dd5-a3ed-2e9f0fc7fb35:7  
+2023/07/22 16:26:30.796	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #3, Category: Installation_Internal, OG: 7, Forced: False, From: Database  
+2023/07/22 16:26:30.968	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #4, Category: UemTokenService, OG: 7, Forced: False, From: Database  
+2023/07/22 16:26:30.983	WS1	4865c511-8ccf-44df-b9a4-42516f046fdf	[0000000-0000000]   (1)  	Info 	WanderingWiFi.AirWatch.BusinessImpl.OAuth2Clients.TokenServiceClientFactory.GetClient	Retrieved YATs ESCC client with https://test.yatsvmware.com as the issuer.  
+2023/07/22 16:26:32.311	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Debug	AirWatch.Security.SSL.SSLProvider.Initialize	 Method: AirWatch.Security.SSL.SSLProvider.Initialize; Parameters: pinToGlobalMicroservices = False;  
+2023/07/22 16:26:32.327	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Debug	AirWatch.Security.SSL.SSLProvider.Initialize	Initializing outbound TLS Protocols to Tls, Tls11, Tls12  
+2023/07/22 16:26:32.343	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Debug	AirWatch.Security.SSL.SSLProvider.Initialize	 Method: AirWatch.Security.SSL.SSLProvider.Initialize; Returns: <N/A>; Duration: 31 ms;  
+2023/07/22 16:26:32.343	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Info 	AW.SmartGroupService.SmartGroupService	****************************************************************  
+2023/07/22 16:26:32.343	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Info 	AW.SmartGroupService.SmartGroupService	* Starting AW.SmartGroupService 22.3.0.0  
+2023/07/22 16:26:32.343	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Debug	AW.SmartGroupService.SmartGroupService.OnStart	Smart Group Service is starting  
+2023/07/22 16:26:32.343	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (9)  	Debug	AW.SmartGroupService.SmartGroupService.OnStart	Smart Group Service has started.  
+2023/07/22 16:26:32.546	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.CompileAllSmartGroupRuleExpressionsAsync	Rule expression for Smart Group id 1 : (ParentOrganizationGroups CONTAINS [570])  
+2023/07/22 16:26:33.249	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.AddRules	Smart Group Id 1 has been synchronized  
+2023/07/22 16:26:33.249	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.CompileAllSmartGroupRuleExpressionsAsync	Rule expression for Smart Group id 2 : (ParentOrganizationGroups CONTAINS [571])  
+2023/07/22 16:26:33.249	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.AddRules	Smart Group Id 2 has been synchronized  
+2023/07/22 16:26:33.264	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.CompileAllSmartGroupRuleExpressionsAsync	Rule expression for Smart Group id 3 : (ParentOrganizationGroups CONTAINS [571] && Ownership IN [1])  
+2023/07/22 16:26:33.299	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.AddRules	Smart Group Id 3 has been synchronized  
+2023/07/22 16:26:33.311	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.CompileAllSmartGroupRuleExpressionsAsync	Rule expression for Smart Group id 4 : (ParentOrganizationGroups CONTAINS [571] && Ownership IN [2])  
+2023/07/22 16:26:33.311	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.AddRules	Smart Group Id 4 has been synchronized  
+2023/07/22 16:26:33.311	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.CompileAllSmartGroupRuleExpressionsAsync	Rule expression for Smart Group id 5 : (ParentOrganizationGroups CONTAINS [571] && Ownership IN [3])  
+2023/07/22 16:26:33.311	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.BusinessImpl.SmartGroups.SmartGroupRulesEngine.AddRules	Smart Group Id 5 has been synchronized  
+2023/07/22 16:26:33.311	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Debug	AW.SmartGroupService.SmartGroupService.InitializeSmartGroupServiceAsync	Done initializing smart groups into in-memory cache.  
+2023/07/22 16:26:33.437	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Error	AirWatch.Messaging.Msmq.MSQueueReader`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].BeginRead	BeginRead error for queue name:awsmartgroupevent, address:.\Private$\*** EXCEPTION ***
+System.Messaging.MessageQueueException: The queue does not exist or you do not have sufficient permissions to perform the operation.   at System.Messaging.MessageQueue.ResolveFormatNameFromQueuePath(String queuePath, Boolean throwException)
+   at System.Messaging.MessageQueue.get_FormatName()
+   at System.Messaging.MessageQueue.add_ReceiveCompleted(ReceiveCompletedEventHandler value)
+   at AirWatch.Messaging.Msmq.MSQueueReader`1.BeginRead()AW_Logging_Exception_Logged:True;AW_Logging_Exception_Data_Count:1;AW_Logging_Exception_Log_Message:{0} error for queue name:{1}, address:{2};Diagnostics Context
+*******************
+PID: 9320
+Process Name: AW.SmartGroupService
+Process Identity: 
+Application Identity: anonymous
+*******************
+ Method: AirWatch.Messaging.Msmq.MSQueueReader`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].BeginRead;  
+2023/07/22 16:26:33.468	WS1	a3cf060c-4d23-4abd-a71a-577e2f4dabee	[0000000-0000000]   (4)  	Error	AW.SmartGroupService.SmartGroupService.OnStart	Error occurred while initializing the Smart group Service.*** EXCEPTION ***
+System.Messaging.MessageQueueException: The queue does not exist or you do not have sufficient permissions to perform the operation.   at System.Messaging.MessageQueue.ResolveFormatNameFromQueuePath(String queuePath, Boolean throwException)
+   at System.Messaging.MessageQueue.get_FormatName()
+   at System.Messaging.MessageQueue.add_ReceiveCompleted(ReceiveCompletedEventHandler value)
+   at AirWatch.Messaging.Msmq.MSQueueReader`1.BeginRead()
+   at AW.SmartGroupService.SmartGroupService.<InitializeSmartGroupServiceAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AW.SmartGroupService.SmartGroupService.<<OnStart>b__13_0>d.MoveNext()AW_Logging_Exception_Logged:True;AW_Logging_Exception_Data_Count:3;AW_Logging_Exception_Log_Message:Error occurred while initializing the Smart group Service.;Diagnostics Context
+*******************
+PID: 9320
+Process Name: AW.SmartGroupService
+Process Identity: 
+Application Identity: anonymous
+*******************
+ Method: AW.SmartGroupService.SmartGroupService.OnStart;  
+2023/07/22 16:28:17.166	WS1	e88df197-c97c-49c3-b8ec-12e2a90d6817	[0000000-0000000]   (4)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #1, Category: Diagnostics_Logging, OG: 7, Forced: False, From: Database  
+2023/07/22 16:30:23.701	WS1	b109e41e-f887-4d45-93da-3bc46222a14c	[0000000-0000000]   (9)  	Debug	WanderingWiFi.AirWatch.SystemCodeService.SystemCodeGroupOverrideDataHandler.Load	Loaded: #1, Category: Diagnostics_Logging, OG: 7, Forced: False, From: Database  
